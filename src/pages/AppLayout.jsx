@@ -1,7 +1,8 @@
-import { Outlet } from "react-router";
+import { Outlet, useNavigate } from "react-router";
 import styled from "styled-components";
 import SearchBar from "../ui/SearchBar";
 import NavBar from "../ui/NavBar";
+import { useEffect } from "react";
 
 const LayoutStyled = styled.div`
   width: 100vw;
@@ -22,6 +23,17 @@ const MainContent = styled.div`
 `;
 
 function AppLayout() {
+  const navigate = useNavigate();
+
+  useEffect(
+    function () {
+      window.addEventListener("beforeunload", () => {
+        navigate("/");
+      });
+    },
+    [navigate]
+  );
+
   return (
     <LayoutStyled>
       <SearchBar />
