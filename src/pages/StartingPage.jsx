@@ -79,11 +79,11 @@ function StartingPage() {
     <Container>
       <StartingLayout>
         <StartingLogo>
-          <img src="/logo/logo.png" alt="Logo" />
+          <img src="../../public/logo/logo.png" alt="Logo" />
         </StartingLogo>
 
         <StartingHead>
-          <img src="/logo/logo.png" alt="Logo" />
+          <img src="../../public/logo/logo.png" alt="Logo" />
           <div>
             <h1>Breeze</h1>
             <p>Weather App</p>
