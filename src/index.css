@@ -1,0 +1,40 @@
+:root {
+  --color-brand: #2563eb;
+  --color-brand--light-1: #60a5fa;
+  --color-brand--dark-1: #1d4ed8;
+
+  --bg-color: #f8fafc;
+  --bg-gray--1: #e4e4e7;
+  --bg-gray--2: #d4d4d4;
+
+  --tx-color: #020617;
+  --tx-color--gray: #9ca3af;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  color: var(--tx-color);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
