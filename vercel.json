@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "src": "/landing",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/weather",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/cities",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/map",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/setting",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/cities/:id",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
