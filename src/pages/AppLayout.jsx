@@ -27,8 +27,8 @@ function AppLayout() {
 
   useEffect(
     function () {
-      window.addEventListener("beforeunload", () => {
-        navigate("/");
+      window.addEventListener("load", () => {
+        navigate("/landing");
       });
     },
     [navigate]

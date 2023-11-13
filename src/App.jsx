@@ -12,7 +12,7 @@ import CitiesAside from "./features/cities/CitiesAside";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/landing",
     element: <StartingPage />,
     index: true,
   },

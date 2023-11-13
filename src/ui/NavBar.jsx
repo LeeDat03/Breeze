@@ -68,7 +68,7 @@ const StyledNavLink = styled(NavLink)`
 function NavBar() {
   return (
     <NavBarStyled>
-      <StyledNavLink to="/">
+      <StyledNavLink to="/landing">
         <LogoImg>
           <img src="/logo/logo.png" alt="Logo" />
         </LogoImg>
