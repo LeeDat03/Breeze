@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import { Icon } from "leaflet";
 import {
-  MapContainer,
   Marker,
-  Popup,
+  MapContainer,
   TileLayer,
+  Popup,
   useMapEvent,
 } from "react-leaflet";
 import Control from "react-leaflet-custom-control";
@@ -109,6 +111,13 @@ function MapMain() {
           <Marker
             position={[weather.latitude, weather.longitude]}
             key={weather.id}
+            icon={
+              new Icon({
+                iconUrl: markerIconPng,
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+              })
+            }
           >
             <Popup>
               <PopupContainer>
